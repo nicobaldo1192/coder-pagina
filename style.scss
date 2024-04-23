@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Martian+Mono:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Martian Mono";
+}
+/*@media(max-width: 768px){
+    .titulo{
+        font-size: 48px;
+    }
+}
+@media(max-width: 768px){
+    .titulo{
+        font-size: 32px;
+    }
+}
+@media(max-width: 768px){
+    .titulo{
+        font-size: 20px;
+    }
+}*/
+.titulo{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-inicio { 
+    color: orangered;
+    font-size: 80px;
+    text-align: center;
+    font-weight: normal; 
+    font-style: italic;
+    font-family: "Martian Mono";
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portada-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.titulo-productos{
+    color: orangered;
+    font-size: 80px;
+    text-align: center;
+    font-weight: normal; 
+    font-style: italic;
+    font-family: "Martian Mono";
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px black;
+}
+.titulo-contactos{
+    color: orangered;
+    font-size: 80px;
+    text-align: center;
+    font-weight: normal; 
+    font-style: italic;
+    font-family: "Martian Mono";
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px black;
+}
+.formulario-contactos {
+    background-color: #ff7e00;
+    width: 600px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+.formulario-contactos-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+}
+.formulario-contactos-grupo-label{
+    color: black;
+}
+.formulario-contactos-boton{
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 5px ;
+    color: #ff7e00;
+    font-weight: bold;
+}
+.formulario-contactos-grupo-input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.formulario-contactos-grupo-input::placeholder{
+    color: white;
+}
+.formulario-contactos-grupo-input:focus{
+    border: 2px solid white;
+    outline: none;
+}
+.navegador{
+    background-color: rgba(238,140,69,255);
+    width: 100%;
+    position: static;
+    top: 0px;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+.logo{
+    width: 75px;
+    height: 75px;
+}
+.navegador-links{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.navegador-links a{
+    display: block;
+    padding: 20px 5px;
+    color: black;
+    text-decoration: none;
+    justify-content: end;
+}
+.main-portada{
+    width: 100px;
+    height: 100px;
+}
+.video-presentacion{
+    width: 50%;
+    height: 200px;
+}
+.footer{
+    background-color: #ff7e00;
+    padding: 20px 20px 20px 20px;
+}
+.productos {
+    display: flex;
+    justify-content: space-evenly;
+}   
+.consola{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    position: relative;
+    left: 100px;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.consola2{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    left: 400px; 
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.consola3{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    position: relative;
+    left: 800px;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.foto{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.p {
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border: solid 5px black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.foto2{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 5px black; 
+    border-radius: 20px;
+}
+.foto3{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.monitor{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.mouse{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.teclado{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.icono-whatsapp{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.icono-facebook{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.icono-instagram{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+.auricular{
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: solid 5px black;
+    border-radius: 20px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.auricular-img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.titulo-auricular{
+    display: flex;
+    justify-content: center;
+}
+.parrafo-auricular{
+    display: flex;
+    justify-content: center;
+}
+.button-comprar{
+    width: 100px;
+    height: 25px;
+    background-color: #ff7e00;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;   
+    transition: 0.5s;
+}
+.button-comprar:hover{
+    background-color: #c8731e;
+    width: 125px;
+    height: 30px;
+}

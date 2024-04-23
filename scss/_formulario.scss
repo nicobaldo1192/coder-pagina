@@ -1,0 +1,70 @@
+.formulario-contactos {
+    background-color: #ff7e00;
+    width: 600px;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+.formulario-contactos-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+}
+.formulario-contactos-grupo-label{
+    color: black;
+}
+.formulario-contactos-boton{
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 5px ;
+    color: #ff7e00;
+    font-weight: bold;
+}
+.formulario-contactos-grupo-input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.formulario-contactos-grupo-input::placeholder{
+    color: white;
+}
+.formulario-contactos-grupo-input:focus{
+    border: 2px solid white;
+    outline: none;
+}
+.foto{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border: solid 5px black;
+    border-radius: 20px;
+}
+.p {
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border: solid 5px black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.foto2{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 5px black; 
+    border-radius: 20px;
+}
+.foto3{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border: solid 5px black;
+    border-radius: 20px;
+}
