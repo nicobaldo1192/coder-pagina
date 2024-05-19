@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Martian+Mono:wght@100..800&display=swap");
 * {
   margin: 0;
@@ -73,6 +74,20 @@
   z-index: -1;
 }
 
+.titulo-novedades {
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.titulo-promos {
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
 .navegador {
   background-color: #F18E14;
   width: 100%;
@@ -90,6 +105,10 @@
   top: 0;
   left: 10;
   padding: 10px;
+  transition: 0.5s;
+}
+.logo:hover {
+  transform: translate(10px, 10px);
 }
 
 .navegador-links {
@@ -131,81 +150,19 @@
   border-radius: 10px;
 }
 
-.productos {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.consola {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: relative;
-  left: 100px;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.consola2 {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: relative;
-  left: 400px;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.consola3 {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  position: relative;
-  left: 800px;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.monitor {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.mouse {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.teclado {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
+/*.productos {
+    display: flex;
+    justify-content: space-evenly;
+}*/
 .productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 25px;
 }
-
-.auricular {
+.productos .auricular {
   width: 300px;
-  margin: 10px;
+  margin: 30px;
   padding: 20px;
   border: solid 5px black;
   border-radius: 20px;
@@ -215,34 +172,233 @@
   gap: 20px;
   position: relative;
 }
-
-.auricular-img {
+.productos .auricular-img {
   width: 250px;
   height: 250px;
   -o-object-fit: cover;
   object-fit: cover;
 }
-
-.titulo-auricular {
+.productos .titulo-auricular {
   display: flex;
   justify-content: center;
 }
-
-.parrafo-auricular {
+.productos .parrafo-auricular {
   display: flex;
   justify-content: center;
 }
-
-.button-comprar {
+.productos .button-comprar {
   width: 100px;
   height: 25px;
   background-color: #ff7e00;
   position: absolute;
   bottom: 10px;
   right: 10px;
+  margin: -30px;
+  margin-right: 70px;
+  border-radius: 20px;
   transition: 0.5s;
 }
-.button-comprarhover {
+.productos .button-comprar:hover {
+  background-color: #EB6016;
+  width: 125px;
+  height: 30px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+.productos .consola {
+  width: 300px;
+  margin: 30px;
+  padding: 20px;
+  border: solid 5px black;
+  border-radius: 20px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.productos .consola-img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.productos .titulo-consola {
+  display: flex;
+  justify-content: center;
+}
+.productos .parrafo-consola {
+  display: flex;
+  justify-content: center;
+}
+.productos .button-comprar {
+  width: 100px;
+  height: 25px;
+  background-color: #ff7e00;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: -30px;
+  margin-right: 70px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.productos .button-comprar:hover {
+  background-color: #EB6016;
+  width: 125px;
+  height: 30px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+.productos .monitor {
+  width: 300px;
+  margin: 30px;
+  padding: 20px;
+  border: solid 5px black;
+  border-radius: 20px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.productos .monitor-img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.productos .titulo-monitor {
+  display: flex;
+  justify-content: center;
+}
+.productos .parrafo-monitor {
+  display: flex;
+  justify-content: center;
+}
+.productos .button-comprar {
+  width: 100px;
+  height: 25px;
+  background-color: #ff7e00;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: -30px;
+  margin-right: 70px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.productos .button-comprar:hover {
+  background-color: #EB6016;
+  width: 125px;
+  height: 30px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+.productos .mouse {
+  width: 300px;
+  margin: 30px;
+  padding: 20px;
+  border: solid 5px black;
+  border-radius: 20px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.productos .mouse-img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.productos .titulo-mouse {
+  display: flex;
+  justify-content: center;
+}
+.productos .parrafo-mouse {
+  display: flex;
+  justify-content: center;
+}
+.productos .button-comprar {
+  width: 100px;
+  height: 25px;
+  background-color: #ff7e00;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: -30px;
+  margin-right: 70px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.productos .button-comprar:hover {
+  background-color: #EB6016;
+  width: 125px;
+  height: 30px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+.productos .teclado {
+  width: 300px;
+  margin: 30px;
+  padding: 20px;
+  border: solid 5px black;
+  border-radius: 20px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.productos .teclado-img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.productos .titulo-teclado {
+  display: flex;
+  justify-content: center;
+}
+.productos .parrafo-teclado {
+  display: flex;
+  justify-content: center;
+}
+.productos .button-comprar {
+  width: 100px;
+  height: 25px;
+  background-color: #ff7e00;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: -30px;
+  margin-right: 70px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.productos .button-comprar:hover {
   background-color: #EB6016;
   width: 125px;
   height: 30px;
@@ -300,40 +456,43 @@
   outline: none;
 }
 
-.foto {
+.reseñas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.comentarios {
+  width: 300px;
+  margin: 30px;
+  padding: 20px;
+  border: solid 5px black;
+  border-radius: 20px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.comentarios .foto-comentarios {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
   object-fit: cover;
-  border: solid 5px black;
-  border-radius: 20px;
+  max-width: 100%;
 }
-
-.p {
+.comentarios .parrafo-comentarios {
   width: 200px;
   background-color: rgb(255, 255, 255);
-  border: solid 5px black;
-  border-radius: 20px;
   margin: 10px;
   padding: 10px;
+  text-align: center;
 }
 
-.foto2 {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.foto3 {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border: solid 5px black;
-  border-radius: 20px;
+.titulo-reseñas {
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
@@ -366,7 +525,8 @@
   object-fit: cover;
   border: solid 5px black;
   border-radius: 20px;
-} 
+}
+
 /*@media(max-width: 768px){
     .titulo{
         font-size: 48px;

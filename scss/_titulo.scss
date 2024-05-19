@@ -58,3 +58,15 @@
 .titulo-contactos {
     @extend %titulo;
 }
+.titulo-novedades{
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.titulo-promos{
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}

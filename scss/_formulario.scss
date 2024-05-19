@@ -49,36 +49,39 @@
     border: 2px solid white;
     outline: none;
 }
-
-.foto {
-    width: 300px;
-    height: 300px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border: solid 5px black;
-    border-radius: 20px;
+.reseñas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
 }
-.p {
-    width: 200px;
-    background-color: rgb(255, 255, 255);
-    border: solid 5px black;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-}
-.foto2 {
+.comentarios {
     width: 300px;
-    height: 300px;
-    -o-object-fit: cover;
-    object-fit: cover;
+    margin: 30px;
+    padding: 20px;
     border: solid 5px black;
     border-radius: 20px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    .foto-comentarios {
+        width: 300px;
+        height: 300px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        max-width: 100%;
+    }
+    .parrafo-comentarios {
+        width: 200px;
+        background-color: rgb(255, 255, 255);
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
 }
-.foto3 {
-    width: 300px;
-    height: 300px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border: solid 5px black;
-    border-radius: 20px;
+.titulo-reseñas{
+    display: flex;
+    justify-content: center;
 }
