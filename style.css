@@ -500,7 +500,11 @@
   padding: 20px 20px 20px 20px;
 }
 
-.icono-whatsapp {
+.redes {
+  display: flex;
+  justify-content: right;
+}
+.redes .icono-whatsapp {
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
@@ -508,8 +512,7 @@
   border: solid 5px black;
   border-radius: 20px;
 }
-
-.icono-facebook {
+.redes .icono-facebook {
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
@@ -517,8 +520,7 @@
   border: solid 5px black;
   border-radius: 20px;
 }
-
-.icono-instagram {
+.redes .icono-instagram {
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
