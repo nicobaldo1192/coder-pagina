@@ -1,25 +1,28 @@
-.footer{
-    background-color: #ff7e00;
+.footer {
+    background-color: $color-secundario;
     padding: 20px 20px 20px 20px;
 }
-.icono-whatsapp{
+.icono-whatsapp {
     width: 50px;
     height: 50px;
+    -o-object-fit: cover;
     object-fit: cover;
     border: solid 5px black;
     border-radius: 20px;
 }
-.icono-facebook{
+.icono-facebook {
     width: 50px;
     height: 50px;
+    -o-object-fit: cover;
     object-fit: cover;
     border: solid 5px black;
     border-radius: 20px;
 }
-.icono-instagram{
+.icono-instagram {
     width: 50px;
     height: 50px;
+    -o-object-fit: cover;
     object-fit: cover;
     border: solid 5px black;
     border-radius: 20px;
-}
+} /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,26 @@
-.titulo{
+.titulo {
     position: relative;
     width: 100%;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+/* @media(max-width: 992px){
+        font-size: 48px;
+    }
+@media(max-width: 768px){
+        font-size: 32px;
+    }
+@media(max-width: 580px){
+        font-size: 20px;
+    }*/
 }
-.titulo-inicio { 
+.titulo-inicio {
     color: orangered;
     font-size: 80px;
     text-align: center;
-    font-weight: normal; 
+    font-weight: normal;
     font-style: italic;
     font-family: "Martian Mono";
     text-decoration: underline;
@@ -18,31 +28,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media(max-width: 768px){
+        .titulo{
+            font-size: 48px;
+        }
+    }
+    @media(max-width: 600px){
+        .titulo{
+            font-size: 32px;
+        }
+    }
+    @media(max-width: 400px){
+        .titulo{
+            font-size: 20px;
+        }
+    }
 }
-.portada-img{
+.portada-img {
     width: 100%;
     height: 500px;
+    -o-object-fit: cover;
     object-fit: cover;
     position: absolute;
     z-index: -1;
 }
-.titulo-productos{
-    color: orangered;
-    font-size: 80px;
-    text-align: center;
-    font-weight: normal; 
-    font-style: italic;
-    font-family: "Martian Mono";
-    text-decoration: underline;
-    text-shadow: 2px 2px 3px black;
+.titulo-productos {
+    @extend %titulo;
 }
-.titulo-contactos{
-    color: orangered;
-    font-size: 80px;
-    text-align: center;
-    font-weight: normal; 
-    font-style: italic;
-    font-family: "Martian Mono";
-    text-decoration: underline;
-    text-shadow: 2px 2px 3px black;
+.titulo-contactos {
+    @extend %titulo;
 }

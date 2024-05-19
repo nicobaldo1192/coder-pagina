@@ -6,21 +6,17 @@
   font-family: "Martian Mono";
 }
 
-/*@media(max-width: 768px){
-    .titulo{
-        font-size: 48px;
-    }
+.titulo-contactos, .titulo-productos {
+  color: orangered;
+  font-size: 80px;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  font-family: "Martian Mono";
+  text-decoration: underline;
+  text-shadow: 2px 2px 3px black;
 }
-@media(max-width: 768px){
-    .titulo{
-        font-size: 32px;
-    }
-}
-@media(max-width: 768px){
-    .titulo{
-        font-size: 20px;
-    }
-}*/
+
 .titulo {
   position: relative;
   width: 100%;
@@ -28,6 +24,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* @media(max-width: 992px){
+          font-size: 48px;
+      }
+  @media(max-width: 768px){
+          font-size: 32px;
+      }
+  @media(max-width: 580px){
+          font-size: 20px;
+      }*/
 }
 
 .titulo-inicio {
@@ -43,40 +48,208 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .titulo-inicio .titulo {
+    font-size: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .titulo-inicio .titulo {
+    font-size: 32px;
+  }
+}
+@media (max-width: 400px) {
+  .titulo-inicio .titulo {
+    font-size: 20px;
+  }
+}
 
 .portada-img {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   z-index: -1;
 }
 
-.titulo-productos {
-  color: orangered;
-  font-size: 80px;
-  text-align: center;
-  font-weight: normal;
-  font-style: italic;
-  font-family: "Martian Mono";
-  text-decoration: underline;
-  text-shadow: 2px 2px 3px black;
+.navegador {
+  background-color: #F18E14;
+  width: 100%;
+  position: static;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
 }
 
-.titulo-contactos {
-  color: orangered;
-  font-size: 80px;
-  text-align: center;
-  font-weight: normal;
-  font-style: italic;
-  font-family: "Martian Mono";
-  text-decoration: underline;
-  text-shadow: 2px 2px 3px black;
+.logo {
+  width: 75px;
+  height: 75px;
+  top: 0;
+  left: 10;
+  padding: 10px;
+}
+
+.navegador-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+.navegador-links a {
+  display: block;
+  padding: 20px 50px;
+  color: black;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+.main-portada {
+  width: 100px;
+  height: 100px;
+}
+
+.texto-busqueda {
+  width: 400px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.boton-busqueda {
+  width: 100px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.consola {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  left: 100px;
+  border: solid 5px black;
+  border-radius: 20px;
+}
+
+.consola2 {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  left: 400px;
+  border: solid 5px black;
+  border-radius: 20px;
+}
+
+.consola3 {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  left: 800px;
+  border: solid 5px black;
+  border-radius: 20px;
+}
+
+.monitor {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: solid 5px black;
+  border-radius: 20px;
+}
+
+.mouse {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: solid 5px black;
+  border-radius: 20px;
+}
+
+.teclado {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: solid 5px black;
+  border-radius: 20px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.auricular {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: solid 5px black;
+  border-radius: 20px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.auricular-img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.titulo-auricular {
+  display: flex;
+  justify-content: center;
+}
+
+.parrafo-auricular {
+  display: flex;
+  justify-content: center;
+}
+
+.button-comprar {
+  width: 100px;
+  height: 25px;
+  background-color: #ff7e00;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transition: 0.5s;
+}
+.button-comprarhover {
+  background-color: #EB6016;
+  width: 125px;
+  height: 30px;
 }
 
 .formulario-contactos {
-  background-color: #ff7e00;
+  background-color: #F18E14;
   width: 600px;
   margin: 40px auto 40px auto;
   padding: 20px;
@@ -127,93 +300,11 @@
   outline: none;
 }
 
-.navegador {
-  background-color: rgb(238, 140, 69);
-  width: 100%;
-  position: static;
-  top: 0px;
-  display: flex;
-  justify-content: end;
-  padding: 10px;
-}
-
-.logo {
-  width: 75px;
-  height: 75px;
-}
-
-.navegador-links {
-  list-style: none;
-  display: flex;
-  gap: 50px;
-}
-
-.navegador-links a {
-  display: block;
-  padding: 20px 5px;
-  color: black;
-  text-decoration: none;
-  justify-content: end;
-}
-
-.main-portada {
-  width: 100px;
-  height: 100px;
-}
-
-.video-presentacion {
-  width: 50%;
-  height: 200px;
-}
-
-.footer {
-  background-color: #ff7e00;
-  padding: 20px 20px 20px 20px;
-}
-
-.productos {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.consola {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  left: 100px;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.consola2 {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  left: 400px;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.consola3 {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  left: 800px;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
 .foto {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: solid 5px black;
   border-radius: 20px;
 }
@@ -231,7 +322,7 @@
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: solid 5px black;
   border-radius: 20px;
 }
@@ -240,43 +331,21 @@
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: solid 5px black;
   border-radius: 20px;
 }
 
-.monitor {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.mouse {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: solid 5px black;
-  border-radius: 20px;
-}
-
-.teclado {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: solid 5px black;
-  border-radius: 20px;
+.footer {
+  background-color: #EF7814;
+  padding: 20px 20px 20px 20px;
 }
 
 .icono-whatsapp {
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: solid 5px black;
   border-radius: 20px;
 }
@@ -285,7 +354,7 @@
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: solid 5px black;
   border-radius: 20px;
 }
@@ -294,60 +363,22 @@
   width: 50px;
   height: 50px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: solid 5px black;
   border-radius: 20px;
+} 
+/*@media(max-width: 768px){
+    .titulo{
+        font-size: 48px;
+    }
 }
-
-.productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 25px;
+@media(max-width: 768px){
+    .titulo{
+        font-size: 32px;
+    }
 }
-
-.auricular {
-  width: 300px;
-  margin: 10px;
-  padding: 20px;
-  border: solid 5px black;
-  border-radius: 20px;
-  position: static;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: relative;
-}
-
-.auricular-img {
-  width: 250px;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.titulo-auricular {
-  display: flex;
-  justify-content: center;
-}
-
-.parrafo-auricular {
-  display: flex;
-  justify-content: center;
-}
-
-.button-comprar {
-  width: 100px;
-  height: 25px;
-  background-color: #ff7e00;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  transition: 0.5s;
-}
-
-.button-comprar:hover {
-  background-color: #c8731e;
-  width: 125px;
-  height: 30px;
-}/*# sourceMappingURL=style.css.map */
+@media(max-width: 768px){
+    .titulo{
+        font-size: 20px;
+    }
+}*//*# sourceMappingURL=style.css.map */

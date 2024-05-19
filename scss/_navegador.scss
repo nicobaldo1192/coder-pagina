@@ -1,29 +1,51 @@
-.navegador{
-    background-color: rgba(238,140,69,255);
+.navegador {
+    background-color: $color-primario;
     width: 100%;
     position: static;
     top: 0px;
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     padding: 10px;
+    align-items: center;
 }
-.logo{
+.logo {
     width: 75px;
     height: 75px;
+    top: 0;
+    left: 10;
+    padding: 10px;
 }
-.navegador-links{
+.navegador-links {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
-.navegador-links a{
+.navegador-links a {
     display: block;
-    padding: 20px 5px;
+    padding: 20px 50px;
     color: black;
     text-decoration: none;
-    justify-content: end;
+    justify-content: space-around;
 }
-.main-portada{
+.main-portada {
     width: 100px;
     height: 100px;
+}
+.texto-busqueda{
+    width: 400px;  
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.boton-busqueda{
+    width: 100px;  
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 10px
 }
